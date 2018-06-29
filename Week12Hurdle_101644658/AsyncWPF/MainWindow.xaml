@@ -1,0 +1,25 @@
+﻿<Window x:Class="JsonAsyncWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsyncWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="640" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Name="r1" Height="120*"/>
+            <RowDefinition Name="r2" Height="174*"/>
+            <RowDefinition Name="r3" Height="120*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Name="c1" Width="204*"/>
+            <ColumnDefinition Name="c2" Width="385"/>
+            <ColumnDefinition Name="c3" Width="203*"/>
+        </Grid.ColumnDefinitions>
+        <Button Width="200" Grid.Column="1" Margin="93,112,92,92" Grid.Row="1" Click="Button_Click_1">Download Json</Button>
+        <TextBox Name="AsyncReturn" Background="LightGray" TextWrapping="Wrap" IsReadOnly="true" Grid.ColumnSpan="3" Margin="130,10,130,159" Grid.RowSpan="2"/>
+        <TextBox Name="UserEntry" Background="LightGray" TextWrapping="Wrap" Margin="0,0,0,116" Grid.Row="2" Grid.Column="1" Text="type here while you wait..."/>
+    </Grid>
+
+</Window>
